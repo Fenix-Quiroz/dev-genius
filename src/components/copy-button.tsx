@@ -19,7 +19,7 @@ export function CopyButton(props: CopyButtonProps) {
     <>
       <span className="text-green-400">{copiado ? "Copiado" : ""}</span>
       <Button
-        className="cursor-pointer"
+        className="cursor-pointer w-full"
         variant="outline"
         onClick={() => handlerCoppy(text)}
       >

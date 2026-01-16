@@ -1,0 +1,19 @@
+export type ColorFormat = "RGB" | "HEX" | "HSL" | "CMYK";
+
+export type ColorConversion = {
+  type: ColorFormat;
+  value: string;
+};
+export type ColorData = {
+  colorConversions: ColorConversion[];
+  colorHarmonies: string[];
+};
+
+export type ColorDataArray = ColorData;
+export interface FormResults {
+  color: string;
+}
+
+export interface FormResultsErrors {
+  color: string;
+}

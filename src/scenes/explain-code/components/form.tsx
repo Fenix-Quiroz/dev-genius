@@ -40,32 +40,41 @@ export const Form = (props: FormProps) => {
     }
   };
   return (
-    <form onSubmit={handleSubmit}>
-      <UISelect
-        label="Lenguaje"
-        name="language"
-        value={formResults.language}
-        options={LANGUAGES}
-        defaultValue="JavaScript"
-        onChange={handler}
-      />
-      <p className="text-red-500">{errors.language}</p>
-      <UITextarea
-        label="Descripción"
-        name="description"
-        value={formResults.description}
-        placeholder="Pega tu codigo aquí..."
-        onChange={handler}
-      />
-      <p className="text-red-500">{errors.description}</p>
-      <Button
-        className="w-full mt-4 cursor-pointer"
-        variant="outline"
-        disabled={loading}
-      >
-        {loading && <Spinner />}
-        {loading ? "Cargando..." : "✨Explicame"}
-      </Button>
-    </form>
+    <div>
+      <header className="mb-2">
+        <h1 className="text-3xl font-semibold">Explicar Código</h1>
+        <p className="text-zinc-400 font-semibold">
+          ¿No sabes qué significa un bloque de código? Deja que la IA lo haga
+          por ti.
+        </p>
+      </header>
+      <form onSubmit={handleSubmit}>
+        <UISelect
+          label="Lenguaje"
+          name="language"
+          value={formResults.language}
+          options={LANGUAGES}
+          defaultValue="JavaScript"
+          onChange={handler}
+        />
+        <p className="text-red-500">{errors.language}</p>
+        <UITextarea
+          label="Descripción"
+          name="description"
+          value={formResults.description}
+          placeholder="Pega tu codigo aquí..."
+          onChange={handler}
+        />
+        <p className="text-red-500">{errors.description}</p>
+        <Button
+          className="w-full mt-4 cursor-pointer"
+          variant="outline"
+          disabled={loading}
+        >
+          {loading && <Spinner />}
+          {loading ? "Cargando..." : "✨Explicame"}
+        </Button>
+      </form>
+    </div>
   );
 };
