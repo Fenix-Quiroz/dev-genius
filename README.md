@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DevGenius
 
-## Getting Started
+**DevGenius** es una herramienta pensada para programadores que buscan optimizar su flujo de trabajo. Con esta página podrás:
 
-First, run the development server:
+- Obtener **nombres creativos y apropiados** para variables o funciones, sin romperte la cabeza.
+- **Entender fragmentos de código** que no te resultan familiares.
+- Acceder a **múltiples formatos de color** (hex, RGB, HSL, etc.) según tu preferencia.
+- Generar paletas con **armonía de colores** a partir de un color base.
+
+![Vista previa del proyecto](docs/preview.png)
+
+---
+
+## 🚀 Cómo iniciar el proyecto
+
+1. Clona el repositorio:
+
+   ```bash
+   git clone https://github.com/Fenix-Quiroz/dev-genius
+   ```
+
+2. En la terminal ejecuta :
+
+```bash
+  npm install
+```
+
+y después
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🧰 Tecnologías utilizadas
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Gemini API** – Utilizada para integrar inteligencia artificial en la aplicación.
+2. **React** – Librería para construir interfaces de usuario.
+3. **TypeScript** – Superset de JavaScript que añade tipado estático.
+4. **Next.js** – Librería para construir aplicaciones web con React.
+5. **Chroma.js** – Librería para manipulación, conversión y validación de colores.
+6. **react-syntax-highlighter** – Librería para resaltar la sintaxis de fragmentos de código.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+7. **Tailwind CSS** – Librería para estilizar la interfaz de usuario.
+8. **Shadcn UI** – Librería para construir interfaces de usuario.
 
-## Learn More
+### 🔑 Configuración de la API de Gemini
 
-To learn more about Next.js, take a look at the following resources:
+Para usar la inteligencia artificial de Gemini, asegúrate de tener una API Key válida. Puedes obtenerla desde [Google AI Studio](https://aistudio.google.com/app/apikey).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Una vez obtenida, crea un archivo `.env` en la raíz del proyecto y añade:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```env
+GOOGLE_GENERATIVE_AI_API_KEY=tu_clave_aquí
+```
