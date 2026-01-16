@@ -52,7 +52,7 @@ export async function POST(request: Request) {
       data = JSON.parse(cleaned);
     } catch {
       return NextResponse.json(
-        { error: "Invalid JSON returned by AI"},
+        { error: "Invalid JSON returned by AI" },
         { status: 502 }
       );
     }

@@ -35,7 +35,7 @@ export function Form(props: FormProps) {
     setErrors(validation.errors);
   };
 
-  const handleSubmit =  (event: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const formValidationResults = validateForm(formResults);
     setErrors(formValidationResults.errors);

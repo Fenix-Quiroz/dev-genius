@@ -18,7 +18,7 @@ export function GenerateVariableNameScene() {
   };
   return (
     <section className="lg:mx-23.75 border border-zinc-700 rounded-lg">
-        <HomeButton />
+      <HomeButton />
       <Header />
       <main>
         <p className="p-3 md:p-4 lg:p-5 border-b border-zinc-700">
