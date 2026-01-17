@@ -9,6 +9,7 @@
 
 ![Vista previa del proyecto](docs/preview.png)
 
+-- Link del proyecto: [DevGenius](https://dev-genius-mdoo.vercel.app/)
 ---
 
 ## 🚀 Cómo iniciar el proyecto
